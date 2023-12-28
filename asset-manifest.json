@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/coffee/static/css/main.56a2d566.css",
+    "main.js": "/coffee/static/js/main.efa91dd3.js",
+    "static/js/787.d4aba7ab.chunk.js": "/coffee/static/js/787.d4aba7ab.chunk.js",
+    "static/media/about-1.jpg": "/coffee/static/media/about-1.5e38b999198f08afaf42.jpg",
+    "static/media/about-4.jpg": "/coffee/static/media/about-4.4c6a6849dde301d56ca9.jpg",
+    "static/media/img-hero.jpg": "/coffee/static/media/img-hero.b57cf717fb05c40946c8.jpg",
+    "static/media/about-2.jpg": "/coffee/static/media/about-2.51539a81e88df1aafd62.jpg",
+    "static/media/mobile-screens.png": "/coffee/static/media/mobile-screens.7c6e9d092f268af8840a.png",
+    "static/media/about-3.jpg": "/coffee/static/media/about-3.39d54b2e9504ec0c827b.jpg",
+    "static/media/coffee-slider-1.png": "/coffee/static/media/coffee-slider-1.ecbb07348f25a0a1d11f.png",
+    "static/media/coffee-slider-3.png": "/coffee/static/media/coffee-slider-3.2dcf422d189ca5b4612e.png",
+    "static/media/coffee-slider-2.png": "/coffee/static/media/coffee-slider-2.346ec6260ea82a1988c3.png",
+    "static/media/logo.svg": "/coffee/static/media/logo.ad970032f13067e4517a50e69dc27ba3.svg",
+    "static/media/coffee-cup.svg": "/coffee/static/media/coffee-cup.34b1178a41698bdcdb3d.svg",
+    "static/media/app-btn.svg": "/coffee/static/media/app-btn.751c7d901b17bc1370c604806dbbb189.svg",
+    "static/media/app-btn-1.svg": "/coffee/static/media/app-btn-1.443ce7d58b4b84f86474aa91a84fbc46.svg",
+    "static/media/info-empty.svg": "/coffee/static/media/info-empty.a85651f78be70d424ebb.svg",
+    "static/media/twitter.svg": "/coffee/static/media/twitter.3b5ddfe300f05a1888caedb4c7bf227c.svg",
+    "static/media/pin-alt.svg": "/coffee/static/media/pin-alt.b4576c6be48dd1d6ddb6.svg",
+    "static/media/clock.svg": "/coffee/static/media/clock.fd3bfdf2461505e88c97.svg",
+    "index.html": "/coffee/index.html",
+    "static/media/instagram.svg": "/coffee/static/media/instagram.5b612b1fabd2818046afe3e071f5d4b4.svg",
+    "static/media/phone.svg": "/coffee/static/media/phone.fe2a73fbe1db74b0179f.svg",
+    "static/media/facebook.svg": "/coffee/static/media/facebook.d2055687594c1690415f93c1ffefa230.svg",
+    "main.56a2d566.css.map": "/coffee/static/css/main.56a2d566.css.map",
+    "main.efa91dd3.js.map": "/coffee/static/js/main.efa91dd3.js.map",
+    "787.d4aba7ab.chunk.js.map": "/coffee/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56a2d566.css",
+    "static/js/main.efa91dd3.js"
+  ]
+}
