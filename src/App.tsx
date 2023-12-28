@@ -22,7 +22,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main/>}/>
                 <Route path="/menu/*" element={<Menu/>}/>
-                <Route path="*" element={<ErrorPage/>}/>
+                <Route path="/*" element={<ErrorPage/>}/>
             </Routes>
             <Footer/>
         </div>

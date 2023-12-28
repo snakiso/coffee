@@ -10,7 +10,6 @@ import {AdditivesButtons} from "./additives-buttons/AdditivesButtons";
 
 export const Popup = () => {
 
-
     const cardData = useAppSelector(state => state.card)
     const dispatch = useAppDispatch()
 

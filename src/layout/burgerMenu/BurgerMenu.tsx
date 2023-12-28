@@ -16,8 +16,6 @@ export const BurgerMenu = () => {
         dispatch(appActions.changeMenuStatus({menuIsOpen: false}))
     }
 
-
-
     return (
         <div className={menuStatus ? `${s.burgerMenu} ${s.burgerMenu_open}` : s.burgerMenu }>
             <div className={s.burgerMenu__inner}>
@@ -33,9 +31,7 @@ export const BurgerMenu = () => {
                 <NavLink
                     to={'menu/coffee'}
                     className={s.burgerMenu__link + ' ' + s.burgerMenu__link_icon}
-                    onClick={closeMenu}
-                >
-                    Menu
+                    onClick={closeMenu}>Menu
                 </NavLink>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import s from './card.module.scss';
 import {ResType} from "../../api/api";
-import {NavLink} from "react-router-dom";
 import {useAppDispatch} from "../../store/store";
 import {setCardInfo} from "../../layout/menu/card-reducer";
 

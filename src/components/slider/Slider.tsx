@@ -1,5 +1,5 @@
 import React from 'react';
-import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import './slider.scss'
 import slide1 from '../../assets/img/coffee-slider-1.png'
@@ -63,7 +63,7 @@ export const Slider = () => {
                 slidesPerView={"auto"}
             >
                 {slides}
-                {width > 1300
+                {width > breakpoint
                     &&
                     <div className="slider-controller">
                         <button className="slider-button-prev"></button>
