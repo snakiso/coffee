@@ -1,0 +1,159 @@
+@import './../../vars';
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  background-color: #E1D4C9;
+  z-index: 20;
+
+
+  &__ownContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include heading-3;
+    color: #403F3D;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    @include body-medium;
+    color: #403F3D;
+  }
+
+  &__buttonsBlock {
+    margin-top: 20px;
+  }
+
+  &__buttonsBlockInner {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__buttonsBlockTitle {
+    display: block;
+    margin-bottom: 8px;
+    @include body-medium;
+    color: #403F3D;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    color: #403F3D;
+    background: none;
+    @include action-links;
+  }
+
+  &__buttonActive {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 100px;
+    border: 1px solid #403F3D;
+    color: #E1D4C9;
+    background: #403F3D;
+    @include action-links;
+  }
+
+  &__buttonCircle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C1B6AD;
+    border-radius: 50%;
+    color: #403F3D;
+  }
+
+  &__total {
+    @include heading-3;
+    color: #403F3D;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__attention {
+    padding: 12px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #C1B6AD;
+
+    p {
+      @include body-caption;
+      position: relative;
+      padding-left: 25px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../assets/img/info-empty.svg');
+      }
+    }
+  }
+
+  @include desktop {
+    &__img {
+      max-width: 310px;
+      aspect-ratio: 2/2;
+      border-radius: 40px;
+    }
+
+    &__inner {
+      padding: 16px;
+      display: flex;
+      column-gap: 20px;
+      align-items: flex-start;
+    }
+  }
+
+  @include tablet {
+    &__img {
+      max-width: 250px;
+      aspect-ratio: 2/2;
+      border-radius: 40px;
+    }
+
+    &__inner {
+      padding: 16px;
+      display: flex;
+      column-gap: 20px;
+      align-items: flex-start;
+    }
+  }
+
+  @include mobile {
+    width: calc(100% - 30px);
+    &__img {
+      display: none;
+    }
+
+    &__buttonsBlockInner {
+      flex-wrap: wrap;
+    }
+
+    &__inner {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: flex-start;
+    }
+  }
+}

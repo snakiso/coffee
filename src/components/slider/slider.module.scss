@@ -1,4 +1,52 @@
-.swiper-wrapper {
-  max-width: 1150px;
+@import '../../vars';
+
+.slider {
+
+  @include desktop {
+    &__slideImg {
+      max-width: 480px;
+      object-fit: cover;
+    }
+  }
+
+  @include tablet {
+    &__slideImg {
+      max-width: 400px;
+      object-fit: cover;
+    }
+  }
+
+  @include mobile {
+    &__slideImg {
+      max-width: 320px;
+      object-fit: cover;
+    }
+  }
+
+  max-width: 1360px;
   margin: auto;
+
+  &__slideInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 480px;
+    margin: auto;
+  }
+
+
+  &__slideTitle {
+    @include heading-3;
+  }
+
+  &__slideDescription {
+    @include body-medium;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  &__slidePrice {
+    @include heading-3;
+  }
 }

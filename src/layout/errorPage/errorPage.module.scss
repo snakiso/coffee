@@ -1,0 +1,17 @@
+.errorPage {
+  padding: 200px 0;
+  text-align: center;
+
+  &__title{
+    font-size: 100px;
+    color: #403F3D;
+    font-weight: 700;
+  }
+
+  &__subtitle{
+    font-size: 62px;
+    color: #403F3D;
+    margin: 60px 0;
+    font-weight: 700;
+  }
+}

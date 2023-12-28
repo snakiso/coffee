@@ -1,3 +1,55 @@
-.burgerMenu{
+@import '../../vars';
 
+.burgerMenu {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #E1D4C9;
+  height: 100%;
+  right: -100%;
+  transition: ease-in-out .2s;
+  z-index: 2;
+
+  &_open {
+    right: 0;
+  }
+
+  &__inner {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    text-align: center;
+  }
+
+  &__link {
+    @include action-links;
+    text-decoration: none;
+    color: $color-dark;
+  }
+
+  &__link_icon {
+    position: relative;
+    padding-right: 30px;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../../assets/img/coffee-cup.svg');
+    }
+  }
 }

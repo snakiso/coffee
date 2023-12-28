@@ -1,3 +1,37 @@
-.slider-pagination{
-    display: block;
+@import "../../vars";
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: $offset-main;
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: $color-grey;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-dark;
+  }
+}
+
+.slider-controller {
+  .slider-button-prev, .slider-button-next {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: url("../../assets/img/button-icon-dark.png") no-repeat ;
+  }
+
+  .slider-button-next{
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
 }

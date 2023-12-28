@@ -1,0 +1,112 @@
+@import './../../vars';
+
+.menu {
+  margin: $offset-main 0 $offset-big 0;
+
+
+  &__title {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    color: #403F3D;
+
+    span {
+      color: #B0907A;
+    }
+  }
+
+  &__tabs {
+    margin-top: $offset-main;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__tabsItem {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    color: #403F3D;
+    @include action-links;
+
+    img {
+      padding: 7px 7px;
+      background-color: #C1B6AD;
+      border-radius: 50%;
+    }
+
+
+  }
+
+  &__tabsItemActive {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 100px;
+    color: #E1D4C9;
+    background-color: #403F3D;
+    border: 1px solid #403F3D;
+    @include action-links;
+
+    img {
+      padding: 7px 7px;
+      background-color: #E1D4C9;
+      border-radius: 50%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: $offset-main;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    &__inner {
+      @include container;
+    }
+
+    &__title {
+      @include heading-2;
+    }
+
+    &__tabs{
+      column-gap: 16px;
+    }
+  }
+
+  @include tablet {
+    &__inner {
+      @include container-sm;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+
+    &__tabs{
+      column-gap: 16px;
+    }
+  }
+
+  @include mobile {
+    &__inner {
+      @include container-sm;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+
+    &__tabs{
+      column-gap: 10px;
+    }
+  }
+}

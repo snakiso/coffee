@@ -1,0 +1,133 @@
+@import './../../vars';
+
+.footer {
+  color: #E1D4C9;
+
+
+  &__title {
+    @include heading-2;
+    color: #E1D4C9;
+    margin-bottom: $offset-main;
+
+    span {
+      color: #B0907A;
+    }
+  }
+
+  &__socialBlock {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  &__socialLink {
+    padding: 18px;
+    border-radius: 50%;
+    border: 1px solid #E1D4C9;
+  }
+
+  &__contactBlock {
+
+  }
+
+  &__contactBlockTitle {
+    display: block;
+    @include heading-3;
+    margin-bottom: $offset-main;
+  }
+
+  &__ContactItem {
+    padding-left: 30px;
+    position: relative;
+
+    a {
+      color: #E1D4C9;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: -2px;
+    }
+
+    &_loc::before {
+      background-image: url("../../assets/img/pin-alt.svg");
+    }
+
+    &_phone::before {
+      background-image: url("../../assets/img/phone.svg");
+    }
+
+    &_clock::before {
+      background-image: url("../../assets/img/clock.svg");
+    }
+  }
+
+  @include desktop {
+    @include container;
+    margin-top: $offset-big;
+    margin-bottom: $offset-secondary;
+
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: $offset-big;
+      border-radius: 40px;
+      box-sizing: border-box;
+      background-color: #665F55;
+      padding: 100px;
+    }
+
+    &__title {
+      @include heading-2;
+    }
+  }
+
+  @include tablet {
+    @include container-sm;
+    margin-top: $offset-big;
+    margin-bottom: $offset-secondary;
+
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: $offset-big;
+      border-radius: 40px;
+      box-sizing: border-box;
+      background-color: #665F55;
+      padding: 100px 50px;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+  }
+
+  @include mobile {
+    @include container-sm;
+    margin-top: $offset-big;
+    margin-bottom: $offset-secondary;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      border-radius: 40px;
+      box-sizing: border-box;
+      background-color: #665F55;
+      padding: 60px 15px;
+      row-gap: 40px;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+  }
+}

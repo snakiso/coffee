@@ -1,0 +1,24 @@
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #403F3D;
+    border-radius: 50%;
+    border-bottom: none;
+    animation: loading linear 1s infinite;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

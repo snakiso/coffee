@@ -1,0 +1,90 @@
+@import '../../../../vars';
+
+.mobileApp {
+  padding-top: $offset-big;
+
+  &__leftBlock {
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    gap: $offset-main;
+    justify-content: center;
+  }
+
+  &__title {
+    span {
+      color: $color-accent;
+      font-style: italic;
+    }
+  }
+
+  &__description {
+    @include body-medium;
+  }
+
+  &__linkBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $offset-secondary;
+  }
+
+  &__link {
+    display: flex;
+    gap: 8px;
+    border: 1px solid $color-dark;
+    border-radius: 100px;
+    padding: 12px 0 12px 20px;
+    color: $color-dark;
+    width: 200px;
+
+    span {
+      @include body-caption;
+    }
+
+    p {
+      @include action-links
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  @include desktop {
+    &__wrapper {
+      @include container;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      @include heading-2;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      @include container-sm;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      @include container-sm;
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+
+  }
+}

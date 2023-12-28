@@ -1,5 +1,49 @@
 @import "../../../../vars";
 
 .favorite {
-  margin-top: $offset-secondary;
+  margin-top: $offset-big;
+  padding-bottom: 50px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: $offset-main;
+    color: $color-dark;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  @include desktop {
+    &__container {
+      @include container;
+    }
+
+    &__title {
+      @include heading-2;
+    }
+  }
+
+  @include tablet {
+    &__container {
+      @include container-sm;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+  }
+
+  @include mobile {
+    &__container {
+      @include container-sm;
+    }
+
+    &__title {
+      @include heading-2-mobile;
+    }
+  }
+
+
 }
+

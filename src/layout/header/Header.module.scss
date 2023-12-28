@@ -1,16 +1,33 @@
-@import "src/vars";
+@import "../../vars";
 
 .header {
   margin-top: 20px;
 
+  @include desktop {
+    &__container {
+      @include container;
+    }
+  }
+
+  @include tablet {
+    &__container {
+      @include container-sm;
+    }
+  }
+
+  @include mobile {
+    &__container {
+      @include container-sm;
+    }
+  }
+
   &__container {
-    @include container;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__log{
+  &__log {
     width: 100px;
     height: 60px;
   }

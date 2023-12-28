@@ -3,19 +3,20 @@
 .button {
   @include action-links;
   color: $color-dark;
-  padding-left:78px;
-  padding-right:78px;
+  padding-left: 78px;
+  padding-right: 78px;
   border-radius: 100px;
 }
 
-.buttonPrimary{
+.buttonPrimary {
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
 }
 
-.buttonSecondary{
+.buttonSecondary {
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid $color-dark;
+  background: none;
 }

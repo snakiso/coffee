@@ -1,36 +1,104 @@
-@import "src/vars";
+@import "../../../../vars";
 
 
 .hero {
-  margin-top: $offset-secondary;
 
-  &__container{
-  @include container;
-}
+  @include desktop {
+    margin-top: $offset-secondary;
 
-  &__innerWrapper {
-    padding: $offset-big;
-    background-image: url('../../../../assets/img/img-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-  }
+    &__container {
+      @include container;
+    }
 
-  &__title {
-    @include  heading-1;
-    color:$color-light;
-    max-width: 530px;
+    &__innerWrapper {
+      padding: $offset-big;
+      background-image: url('../../../../assets/img/img-hero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 40px;
+    }
 
-    span{
-      color:$color-accent;
+    &__title {
+      @include heading-1;
+      color: $color-light;
+      max-width: 530px;
+
+      span {
+        color: $color-accent;
+      }
+    }
+
+    &__text {
+      margin: $offset-main 0;
+      @include body-medium;
+      color: $color-light;
+      max-width: 530px;
     }
   }
 
-  &__text {
-    margin: $offset-main 0;
-    @include body-medium;
-    color:$color-light;
-    max-width: 530px;
+  @include tablet {
+    margin-top: $offset-secondary;
+
+    &__container {
+      @include container-sm;
+    }
+
+    &__innerWrapper {
+      padding: $offset-big 60px;
+      background-image: url('../../../../assets/img/img-hero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 40px;
+    }
+
+    &__title {
+      @include heading-1;
+      color: $color-light;
+      max-width: 530px;
+
+      span {
+        color: $color-accent;
+      }
+    }
+
+    &__text {
+      margin: $offset-main 0;
+      @include body-medium;
+      color: $color-light;
+      max-width: 530px;
+    }
   }
 
+  @include mobile {
+    margin-top: $offset-secondary;
+
+    &__container {
+      @include container-sm;
+    }
+
+    &__innerWrapper {
+      padding: 60px 15px;
+      background-image: url('../../../../assets/img/img-hero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 40px;
+    }
+
+    &__title {
+      @include heading-1-mobile;
+      color: $color-light;
+      max-width: 530px;
+
+      span {
+        color: $color-accent;
+      }
+    }
+
+    &__text {
+      margin: $offset-main 0;
+      @include body-medium;
+      color: $color-light;
+      max-width: 530px;
+    }
+  }
 }
