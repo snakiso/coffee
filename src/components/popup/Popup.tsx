@@ -16,6 +16,7 @@ export const Popup = () => {
 
     useEffect(() => {
         document.body.style.overflow = 'hidden'
+        document.body.style.scrollbarGutter = 'stable'
 
         return () => {
             document.body.style.overflow = 'unset'
