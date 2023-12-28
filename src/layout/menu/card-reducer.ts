@@ -44,10 +44,12 @@ const slice = createSlice({
             state.price = state.size[action.payload.id].price
         },
         changeAdditive: (state, action: PayloadAction<{ id: number }>) => {
+            const sumPrice = Number((state.price + state.additives[action.payload.id].price).toFixed(2))
+            const negPrice = Number((state.price - state.additives[action.payload.id].price).toFixed(2))
             state.additives[action.payload.id].active = state.additives[action.payload.id].active === 'active' ? 'unActive' : 'active'
             state.price = state.additives[action.payload.id].active === 'active'
-                ? state.price + state.additives[action.payload.id].price
-                : state.price - state.additives[action.payload.id].price
+                ? sumPrice
+                : negPrice
         }
     },
 })

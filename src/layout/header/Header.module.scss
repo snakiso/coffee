@@ -3,24 +3,6 @@
 .header {
   margin-top: 20px;
 
-  @include desktop {
-    &__container {
-      @include container;
-    }
-  }
-
-  @include tablet {
-    &__container {
-      @include container-sm;
-    }
-  }
-
-  @include mobile {
-    &__container {
-      @include container-sm;
-    }
-  }
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -63,4 +45,21 @@
     }
   }
 
+  @include desktop {
+    &__container {
+      @include container;
+    }
+  }
+
+  @include tablet {
+    &__container {
+      @include container-sm;
+    }
+  }
+
+  @include mobile {
+    &__container {
+      @include container-sm;
+    }
+  }
 }
