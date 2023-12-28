@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(
 root.render(
 
     <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter basename={`https://snakiso.github.io/coffee/`}>
             <App/>
-        </HashRouter>
+        </BrowserRouter>
     </Provider>
 );
 
