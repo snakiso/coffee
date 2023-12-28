@@ -1,0 +1,36 @@
+@import "src/vars";
+
+
+.hero {
+  margin-top: $offset-secondary;
+
+  &__container{
+  @include container;
+}
+
+  &__innerWrapper {
+    padding: $offset-big;
+    background-image: url('../../../../assets/img/img-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+  }
+
+  &__title {
+    @include  heading-1;
+    color:$color-light;
+    max-width: 530px;
+
+    span{
+      color:$color-accent;
+    }
+  }
+
+  &__text {
+    margin: $offset-main 0;
+    @include body-medium;
+    color:$color-light;
+    max-width: 530px;
+  }
+
+}

@@ -1,0 +1,71 @@
+// Переменные цвета
+$color-accent: #B0907A;
+$color-dark: #403F3D;
+$color-semidark:#665F55;
+$color-light: #E1D4C9;
+$color-grey: #C1B6AD;
+$color-darkgrey: rgba(64, 63, 61, 0.80);
+
+//Миксины для типографии
+
+// Миксины для типографии
+
+@mixin heading-1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+@mixin heading-2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+@mixin heading-3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+@mixin body-medium{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@mixin body-caption{
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin action-links{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@mixin action-burger-link{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+// Переменные для отступов
+
+$offset-main: 40px;
+$offset-middle: 60px;
+$offset-big: 100px;
+$offset-secondary: 20px;
+
+
+// Переменные для контейнера
+
+@mixin container {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+

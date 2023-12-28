@@ -1,0 +1,49 @@
+@import "src/vars";
+
+.header {
+  margin-top: 20px;
+
+  &__container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__log{
+    width: 100px;
+    height: 60px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    column-gap: $offset-main;
+  }
+
+
+  &__link {
+    @include action-links;
+    text-decoration: none;
+    color: $color-dark;
+  }
+
+  &__link_icon {
+    position: relative;
+    padding-right: 30px;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../../assets/img/coffee-cup.svg');
+    }
+  }
+
+}
