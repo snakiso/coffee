@@ -1,0 +1,45 @@
+@import '../../vars';
+
+.contact {
+  margin: 100px 0;
+
+  @include desktop {
+
+    &__title{
+      @include heading-2;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #403F3D;
+    }
+
+    &__inner {
+      @include container;
+    }
+  }
+
+  @include tablet {
+    &__title{
+      @include heading-2-mobile;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #403F3D;
+    }
+
+    &__inner {
+      @include container-sm;
+    }
+  }
+
+  @include mobile {
+    &__title{
+      @include heading-2-mobile;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #403F3D;
+    }
+
+    &__inner {
+      @include container-sm;
+    }
+  }
+}
