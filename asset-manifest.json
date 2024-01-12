@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coffee/static/css/main.6fbdb204.css",
-    "main.js": "/coffee/static/js/main.6997dcfd.js",
+    "main.css": "/coffee/static/css/main.b7ac0af5.css",
+    "main.js": "/coffee/static/js/main.d5164968.js",
     "static/js/787.d4aba7ab.chunk.js": "/coffee/static/js/787.d4aba7ab.chunk.js",
     "static/media/about-1.jpg": "/coffee/static/media/about-1.5e38b999198f08afaf42.jpg",
     "static/media/about-4.jpg": "/coffee/static/media/about-4.4c6a6849dde301d56ca9.jpg",
@@ -24,12 +24,12 @@
     "static/media/instagram.svg": "/coffee/static/media/instagram.5b612b1fabd2818046afe3e071f5d4b4.svg",
     "static/media/phone.svg": "/coffee/static/media/phone.fe2a73fbe1db74b0179f.svg",
     "static/media/facebook.svg": "/coffee/static/media/facebook.d2055687594c1690415f93c1ffefa230.svg",
-    "main.6fbdb204.css.map": "/coffee/static/css/main.6fbdb204.css.map",
-    "main.6997dcfd.js.map": "/coffee/static/js/main.6997dcfd.js.map",
+    "main.b7ac0af5.css.map": "/coffee/static/css/main.b7ac0af5.css.map",
+    "main.d5164968.js.map": "/coffee/static/js/main.d5164968.js.map",
     "787.d4aba7ab.chunk.js.map": "/coffee/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fbdb204.css",
-    "static/js/main.6997dcfd.js"
+    "static/css/main.b7ac0af5.css",
+    "static/js/main.d5164968.js"
   ]
 }
